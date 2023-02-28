@@ -7,7 +7,6 @@ O projeto consiste em utilizar um microcontrolador Arduino para a leitura da dis
 
 #Plano de ação
 
-  Escrever o programa que controle o sensor e que tire as infomações das medidas
-  Encontrar uma forma de mandar as informações do microprocessador para o celular 
-    Sugestão do professor: Usar um cabo de ethernet no arduíno para gerar um servidor
-  Aplicativo ou site que de controle ao usuário
+  1. Escrever o programa para arduíno que controle o sensor e que tire as infomações das distâncias
+  2. Encontrar uma forma de mandar as informações do microprocessador para o celular (sugestão do professor: usar um cabo de ethernet no arduíno para gerar um servidor)
+  3. Aplicativo ou site que de controle ao usuário e que mostre a medida desejada.
