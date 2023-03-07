@@ -12,4 +12,4 @@ O projeto consiste em utilizar um microcontrolador Arduino para a leitura da dis
   3. Aplicativo ou site que de controle ao usuário e que mostre a medida desejada.
 
 ## Componentes
-O grupo irá utilizar a placa ESP32 (board) e um sensor ultrassônico HC-SR04. 
+O grupo irá utilizar a placa ESP32 (board) e um sensor ultrassônico HC-SR04. Para a programaçao da placa será utilizada a plataformIO através do VS code.
