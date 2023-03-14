@@ -13,7 +13,7 @@ O projeto consiste em utilizar um microcontrolador Arduino para a leitura da dis
   4. Utilizar comunicação assíncrona com mqtt ou síncrona com bluetooth 
 
 ## Componentes
-O grupo irá utilizar a placa ESP32 (board) e um sensor ultrassônico HC-SR04. Para a programaçao da placa será utilizada a plataformIO através do VS code.
+O grupo irá utilizar a placa ESP32 (board) e um sensor ultrassônico HC-SR04. Para a programaçao da placa será utilizada a plataformIO através do VS code. A placa sera colocada em um protoboard que ligará todos os componentes utilizados.
 
 ## Primeira Semana
 O foco foi na montagem do projeto, fazer a parte de interação com o sensor ultrassônico, estudar o processador que vamos utilizar e o método de transmissão de informação. 
