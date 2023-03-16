@@ -23,4 +23,4 @@ Utilizaremos um aplicativo que funciona via bluetooth que imprime a parte de "mo
 ## Segunda Semana
 O trabalho vai ser voltado para a parte de captação e processamento de dados.
 
-Ademais, foi incluído o código que será utilizado  no microcontrolador ESP32.
+Ademais, foi incluído o código que será utilizado  no microcontrolador ESP32. Vale resslatar que não foi possível enviar a informação para o microcontrolador via app, devido ao alto grau de complexidade. Para resolver o problema, será utilizado um botão analógico ligado ao microcontrolador ESP32.
