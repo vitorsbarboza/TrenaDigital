@@ -2,11 +2,12 @@
 
 BluetoothSerial SerialBT;
 
-const int trigPin = D4;
-const int echoPin = D5;
-const int buttonPin = A0;
+const int trigPin = 4;
+const int echoPin = 5;
+const int buttonPin = 18;
 
 void setup() {
+  Serial.begin(9600);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   pinMode(buttonPin, INPUT);
@@ -14,7 +15,7 @@ void setup() {
 }
 
 void loop() {
-  if (analogRead(buttonPin) < 1000) { // Verifica se o botão foi pressionado
+  if (digitalRead(buttonPin) == 1) { // Verifica se o botão foi pressionado
     digitalWrite(trigPin, LOW);
     delayMicroseconds(2);
     digitalWrite(trigPin, HIGH);
@@ -23,5 +24,7 @@ void loop() {
     long duration = pulseIn(echoPin, HIGH);
     float distance = duration * 0.034 / 2;
     SerialBT.println(distance); // Envia a distância medida via Bluetooth
+    Serial.println(distance); // Envia a distância medida via Serial
+    delay(1000);
   }
 }
