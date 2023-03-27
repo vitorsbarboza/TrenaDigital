@@ -1,5 +1,11 @@
 # TrenaDigital
-Este repositório contém o projeto do Gruopo E para a disciplina de "Microcontroladores e Microprocessadores".
+Este repositório contém o projeto do Grupo E para a disciplina de "Microcontroladores e Microprocessadores".
+
+Integrantes do grupo:
+- Letícia Borges Medeiros/769159
+- Lourdes Mikalef/791401
+- Pedro Gomes/727651
+- Vitor de Souza Barboza/791446
 
 ## Proposta
 
