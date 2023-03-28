@@ -69,5 +69,5 @@ A partir dos resultados observados nos testes, foi concluído que o objetivo do 
 
 ## Resultado
 
-O sensor em funcionamento pode ser visto através do vídeo alocada em: `TrenaDigital/Imagens/video_apresentação.mp4`
+O sensor em funcionamento pode ser visto através do vídeo alocada [neste link](https://drive.google.com/drive/folders/1_mb4Sq9dRiqveMDSrgcHcr2kRqFhpsQZ?usp=sharing)
 
