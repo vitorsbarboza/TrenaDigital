@@ -69,4 +69,4 @@ A partir dos resultados observados nos testes, foi concluído que o objetivo do 
 
 ## Resultado
 
-O sensor em funcionamento pode ser visto através do vídeo alocada [neste link](https://drive.google.com/file/d/1msSx_YvE_mpNZFvQOlzO-efm7EuEzwMx/view?usp=share_link)
+O sensor em funcionamento pode ser visto através do vídeo alocada neste link: https://drive.google.com/file/d/1c7skWNKZXpDR2YhkOV3kyt424Hir2nCl/view?usp=share_link
