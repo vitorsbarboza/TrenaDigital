@@ -38,7 +38,40 @@ Dessa forma, a placa foi colocada na protoboard de forma que o GND e o VIN (tens
 Além disso, foi instalado o aplicativo Serial Terminal Bluetooth num dispositívo móvel e, ao pareá-lo com a placa e apertar o botão, foi possível ver o resultado de saída ou o "monitor" no aplicativo.
 
 ## Explicação do código
+## Projeto TrenaDigital
 
+O projeto TrenaDigital utiliza um microcontrolador Arduino MEGA e um sensor ultrassônico HC-SR04 para medir a distância de um objeto e enviar essa informação para um smartphone via Bluetooth. É necessário conectar o sensor ultrassônico ao Arduino MEGA por meio de um circuito simples e o módulo Bluetooth por meio de um circuito de comunicação serial. Após desenvolver o código, é possível testar o projeto conectando o smartphone ao módulo Bluetooth para verificar a leitura da distância na tela. O projeto pode ser ajustado para incluir recursos adicionais, como exibição gráfica da distância e alertas sonoros quando a distância se aproxima de um limite definido.
+
+#### Materiais Utilizados
+
+- Sensor ultrassônico HC-SR04
+- Módulo Bluetooth HC-05
+- Placa ESP32
+- Editor de texto VSCode
+- Extensão PlataformIO para VSCode
+- Aplicativo "Serial Bluetooth Terminal" para smartphone
+
+#### Passo a Passo
+
+1. Faça o download do repositório do projeto.
+2. Monte o circuito contendo o botão, o sensor, a placa ESP32 e os demais elementos necessários. Isso inclui um resistor de 1 kohm e um capacitor de 10uF para o circuito de conexão do sensor ultrassônico ao microcontrolador. Você pode encontrar a placa ESP32 em sites como [Google Shopping](https://www.google.com/search?q=ESP32+(board)) ou [Amazon](https://www.amazon.com/esp32-board/s?k=esp32+board).
+3. Conecte a placa ESP32 ao computador via USB.
+
+![Montagem do cirrcuito na ProtoBoard](https://github.com/vitorsbarboza/TrenaDigital/blob/main/Imagens/Circuito.jpeg)
+
+4. Após baixar e instalar o editor de código VSCode, adicione a extensão PlataformIO. Você pode encontrar o VSCode em [Visual Studio Code](https://code.visualstudio.com/), e a extensão PlataformIO em [PlataformIO IDE for VSCode](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide).
+5. Instale no smartphone o aplicativo "Serial Bluetooth Terminal". Você pode encontrar o aplicativo na [Google Play Store](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal).
+6. Conecte o aplicativo ao microcontrolador via Bluetooth, para receber os dados de distância medidos pelo sensor ultrassônico.
+7. Segure o botão de boot da placa e na sequência execute o arquivo main.cpp.
+8. Aguarde a compilação do código.
+9. Posicione algum objeto à frente do sensor e pressione o botão.
+10. A medida realizada, em centímetros, será exibida no aplicativo "Serial Bluetooth Terminal".
+
+![Visualição das medida em cm](https://github.com/vitorsbarboza/TrenaDigital/blob/main/Imagens/Medida.jpeg)
+
+### Conclusão
+
+O projeto TrenaDigital é uma iniciativa de quatro integrantes de um grupo de estudos, que visa utilizar um microcontrolador Arduino e um sensor ultrassônico HC-SR04 para medir a distância de um objeto e enviar essa informação para um smartphone. A placa escolhida para a realização do projeto foi a ESP32, e a plataforma de desenvolvimento utilizada foi o VS Code com a extensão PlataformIO. O objetivo do projeto foi alcançado com sucesso, e foi comprovado por meio de testes que a trena desenvolvida é funcional e possui boa precisão nas medições
 A princípio, incluiu-se a biblioteca BluetoothSerial.h para possibilitar a utilização do módulo Bluetooth em conjunto com o ESP32. Feito isso, criou-se uma instância de BluetoothSerial chamada SerialBT e declarou-se as constantes: trigPin, echoPin e buttonPin, que representam os pinos da placa aos quais estão conectados o pino de saída do sensor ultrassônico, o pino de entrada do sensor ultrassônico e o pino do botão, respectivamente.
 
 Na função setup(), são configurados os pinos trigPin, echoPin e buttonPin como saída, entrada e entrada e iniciado o módulo Bluetooth.
