@@ -65,5 +65,9 @@ Para ver se de fato a trena funciona, foi escolhido um objeto, e foram retiradas
 - Teste 2:
 O segundo teste foi realizado para analisar a precisão das medidas realizadas. Foi colocado um objeto à uma distancia conhecida (dimensões de uma caixa 13cmx9cm), e novamente foram tiradas varias medidas. Houve pequenas variações nas medidas em relação ao valor esperado.   
 
-A partir dos resultados observados nos testes, foi concluído que o objetivo do projeto foi alcançado com sucesso 
+A partir dos resultados observados nos testes, foi concluído que o objetivo do projeto foi alcançado com sucesso.
+
+## Resultado
+
+O sensor em funcionamento pode ser visto através do vídeo alocada em: `TrenaDigital/Imagens/video_apresentação.mp4`
 
