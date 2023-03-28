@@ -33,7 +33,7 @@ As conecções foram feitas a partir do pinout da placa:
 
 ![Pinout ESP32](https://github.com/vitorsbarboza/TrenaDigital/blob/main/Imagens/ESP32-DOIT-DEV-KIT-v1-pinout-mischianti.png)
 
-Dessa forma, a placa foi colocada na protoboard de forma que o GND e o VIN (tensão de 5V) pudessem ser acessados facilmente, assim como os demais pinos. Com isso, foi possível conectar também o GND e o VCC tanto do sensor ultrassônico quanto do botão. Depois, conectou-se o botão ao pino 18, o echo do sensor no pino 5 e o trigger no pino 4. Por fim, conectou-se a placa ao notebook para que fosse possível programá-la, com o código escrito em C++ disponível em: 'https://github.com/vitorsbarboza/TrenaDigital/blob/main/Trena%20Digital%20ESP32/src/main.cpp'
+Dessa forma, a placa foi colocada na protoboard de forma que o GND e o VIN (tensão de 5V) pudessem ser acessados facilmente, assim como os demais pinos. Com isso, foi possível conectar também o GND e o VCC tanto do sensor ultrassônico quanto do botão. Depois, conectou-se o botão ao pino 18, o echo do sensor no pino 5 e o trigger no pino 4. Por fim, conectou-se a placa ao notebook para que fosse possível programá-la, com o código disponível em: `/src/main.cpp`
 
 ## Deselvolvimento do projeto
 O projeto foi realizado ao longo de três semanas:
