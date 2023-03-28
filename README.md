@@ -38,6 +38,13 @@ Dessa forma, a placa foi colocada na protoboard de forma que o GND e o VIN (tens
 Além disso, foi instalado o aplicativo Serial Terminal Bluetooth num dispositívo móvel e, ao pareá-lo com a placa e apertar o botão, foi possível ver o resultado de saída ou o "monitor" no aplicativo.
 
 ## Explicação do código
+
+A princípio, incluiu-se a biblioteca BluetoothSerial.h para possibilitar a utilização do módulo Bluetooth em conjunto com o ESP32. Feito isso, criou-se uma instância de BluetoothSerial chamada SerialBT e declarou-se as constantes: trigPin, echoPin e buttonPin, que representam os pinos da placa aos quais estão conectados o pino de saída do sensor ultrassônico, o pino de entrada do sensor ultrassônico e o pino do botão, respectivamente.
+
+Na função setup(), são configurados os pinos trigPin, echoPin e buttonPin como saída, entrada e entrada e iniciado o módulo Bluetooth.
+
+Na função loop(), é feita uma verificação se o botão foi pressionado através da leitura do estado do buttonPin. Se o botão foi pressionado, é enviado um sinal para o pino trigPin do sensor ultrassônico, e em seguida é medida a duração do sinal de resposta do pino echoPin do sensor. A distância é calculada com base na duração do sinal e é enviada via Bluetooth e Serial. As medidas são enviadas com um delay de 1s.
+
 ## Projeto TrenaDigital
 
 O projeto TrenaDigital utiliza um microcontrolador Arduino MEGA e um sensor ultrassônico HC-SR04 para medir a distância de um objeto e enviar essa informação para um smartphone via Bluetooth. É necessário conectar o sensor ultrassônico ao Arduino MEGA por meio de um circuito simples e o módulo Bluetooth por meio de um circuito de comunicação serial. Após desenvolver o código, é possível testar o projeto conectando o smartphone ao módulo Bluetooth para verificar a leitura da distância na tela. O projeto pode ser ajustado para incluir recursos adicionais, como exibição gráfica da distância e alertas sonoros quando a distância se aproxima de um limite definido.
