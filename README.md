@@ -37,7 +37,7 @@ Dessa forma, a placa foi colocada na protoboard de forma que o GND e o VIN (tens
 
 Além disso, foi instalado o aplicativo Serial Terminal Bluetooth num dispositívo móvel e, ao pareá-lo com a placa e apertar o botão, foi possível ver o resultado de saída ou o "monitor" no aplicativo.
 
-##Explicação do código
+## Explicação do código
 
 A princípio, incluiu-se a biblioteca BluetoothSerial.h para possibilitar a utilização do módulo Bluetooth em conjunto com o ESP32. Feito isso, criou-se uma instância de BluetoothSerial chamada SerialBT e declarou-se as constantes: trigPin, echoPin e buttonPin, que representam os pinos da placa aos quais estão conectados o pino de saída do sensor ultrassônico, o pino de entrada do sensor ultrassônico e o pino do botão, respectivamente.
 
