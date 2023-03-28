@@ -2,10 +2,10 @@
 Este repositório contém o projeto do Grupo E para a disciplina de "Microcontroladores e Microprocessadores".
 
 Integrantes do grupo:
-- Letícia Borges Medeiros - 769159
-- Lourdes Mikalef - 791401
-- Pedro Gomes - 727651
-- Vitor de Souza Barboza - 791446
+- Letícia Borges Medeiros - 769159 - lemedeiros (usuário do github) 
+- Lourdes Mikalef - 791401 - lmikalef (usuário do github) 
+- Pedro Gomes - 727651 - Pedro-Sant (usuário do github) 
+- Vitor de Souza Barboza - 791446 - vitorsbarboza (usuário do github) 
 
 ## Proposta
 
@@ -45,7 +45,7 @@ Na função setup(), são configurados os pinos trigPin, echoPin e buttonPin com
 
 Na função loop(), é feita uma verificação se o botão foi pressionado através da leitura do estado do buttonPin. Se o botão foi pressionado, é enviado um sinal para o pino trigPin do sensor ultrassônico, e em seguida é medida a duração do sinal de resposta do pino echoPin do sensor. A distância é calculada com base na duração do sinal e é enviada via Bluetooth e Serial. As medidas são enviadas com um delay de 1s.
 
-## Deselvolvimento do projeto
+## Desenvolvimento do projeto
 O projeto foi realizado ao longo de três semanas:
 
 ### Primeira Semana
